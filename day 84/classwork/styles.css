@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+  }
+  
+  .card h2, .card h3, .card h1 {
+    margin: 0.5rem 0;
+  }
+  
+  .card span {
+    color: #8e5cff;
+    font-weight: bold;
+  }
+  
+  .card.create {
+    background: #fce8d5;
+    grid-column: span 1;
+  }
+  
+  .card.main {
+    background: #8e5cff;
+    color: white;
+    text-align: center;
+    grid-column: span 2;
+  }
+  
+  .card.schedule {
+    background: #e7dfff;
+    grid-column: span 1;
+  }
+  
+  .chart {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: flex-end;
+    margin: 0.5rem 0;
+  }
+  
+  .chart div {
+    width: 10px;
+    background: #8e5cff;
+    border-radius: 5px;
+  }
+  
+  .card.write {
+    background: #ffc342;
+    grid-column: span 1;
+  }
+  
+  .card.chat p {
+    background: white;
+    padding: 0.5rem;
+    margin: 0.2rem 0;
+    border-radius: 0.5rem;
+  }
+  
+  .card.manage {
+    grid-column: span 1;
+  }
+  
+  .card.schedule2 {
+    background: #ffd67f;
+    grid-column: span 1;
+  }
+  
+  .card.growth {
+    grid-column: span 1;
+  }
+  
+  .card.followers {
+    background: #d5cfff;
+    grid-column: span 1;
+  }
+  
+  .card.nonstop {
+    background: #8e5cff;
+    color: white;
+    grid-column: span 2;
+    text-align: center;
+  }
+  
+  button {
+    background: #ffc342;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
